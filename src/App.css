@@ -1,0 +1,12 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.app_videos {
+    position: relative;
+    height: 500px;
+    overflow-y: scroll;
+    width: 80%;
+    max-width: 500px;
+    scroll-snap-type: y mandatory;
+}
