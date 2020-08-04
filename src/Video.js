@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './Video.css'
+import VideoFooter from './VideoFooter';
 
 function Video() {
     const [playing, setPlaying] = useState(false)
@@ -25,8 +26,8 @@ function Video() {
                 ref={videoRef}
                 src="./test-vdo.mp4"
             ></video>
-            {/* <VideoFooter />
-            <VideoSidebar /> */}
+            <VideoFooter />
+            {/* <VideoSidebar /> */}
         </div>
     )
 }
