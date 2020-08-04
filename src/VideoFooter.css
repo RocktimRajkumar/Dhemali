@@ -1,18 +1,40 @@
 .videoFooter {
     position: relative;
-    bottom: 60px;
+    bottom: 130px;
     color: white;
     display: flex;
+    margin-left: 30px;
 }
 
 .videoFooter_text {
     flex: 1;
 }
 
+.videoFooter_text>p {
+    padding-bottom: 8px;
+}
+
 .videoFooter_record {
     animation: spinTheRecord infinite 4s linear;
     height: 35px;
     filter: invert(1);
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+}
+
+.videoFooter_icon {
+    position: absolute;
+}
+
+.videoFooter_ticker>.ticker {
+    margin-left: 30px;
+    height: fit-content;
+    width: 64%;
+}
+
+.videoFooter_text>h4 {
+    padding-bottom: 10px;
 }
 
 @keyframes spinTheRecord {
