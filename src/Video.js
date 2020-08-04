@@ -26,7 +26,10 @@ function Video() {
                 ref={videoRef}
                 src="./test-vdo.mp4"
             ></video>
-            <VideoFooter />
+            <VideoFooter channel='RcMusic'
+                description='Dancing monkey on the floor'
+                song='In the End'
+            />
             {/* <VideoSidebar /> */}
         </div>
     )
