@@ -6,7 +6,14 @@ function App() {
   return (
     <div className="app">
       <div className="app_videos">
-        <Video />
+        <Video
+          url="./test-vdo.mp4"
+          channel="RjMusic"
+          description="Dancing monkey on the floor"
+          song="In the End"
+          likes={404}
+          shares={302}
+          messages={500} />
         <Video />
         <Video />
         <Video />
