@@ -1,6 +1,6 @@
 .videoFooter {
     position: relative;
-    bottom: 130px;
+    bottom: 120px;
     color: white;
     display: flex;
     margin-left: 30px;
@@ -20,7 +20,7 @@
     filter: invert(1);
     position: absolute;
     bottom: 0px;
-    right: 15px;
+    right: 20px;
 }
 
 .videoFooter_icon {

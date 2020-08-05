@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './Video.css'
 import VideoFooter from './VideoFooter';
+import VideoSidebar from './VideoSidebar';
 
 function Video() {
     const [playing, setPlaying] = useState(false)
@@ -30,7 +31,7 @@ function Video() {
                 description='Dancing monkey on the floor'
                 song='In the End'
             />
-            {/* <VideoSidebar /> */}
+            <VideoSidebar likes={404} shares={250} messages={333} />
         </div>
     )
 }
