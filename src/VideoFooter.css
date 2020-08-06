@@ -30,6 +30,7 @@
 .videoFooter_ticker>.ticker {
     margin-left: 30px;
     height: fit-content;
+    white-space: nowrap;
     width: 64%;
 }
 

@@ -4,6 +4,7 @@ html {
 
 .app {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-color: black;
     display: grid;
     place-items: center;
@@ -19,6 +20,22 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 700px) {
+    .app_videos {
+        position: relative;
+        height: 100%;
+        border-radius: 0px;
+        overflow-y: scroll;
+        width: 100%;
+        max-width: unset;
+        scroll-snap-type: y mandatory;
+    }
+}
+
+
+/* Hiding the scroll bar */
 .app_videos::-webkit-scrollbar {
     display: none;
 }

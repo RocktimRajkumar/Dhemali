@@ -6,6 +6,17 @@ import './App.css'
 function App() {
   const [videos, setVideos] = useState([])
 
+  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+  const appHeight = () => {
+    const vh = window.innerHeight * 0.01;
+    const doc = document.documentElement
+    doc.style.setProperty('--vh', `${vh}px`)
+  }
+
+  // We listen to the resize event
+  window.addEventListener('resize', appHeight)
+  appHeight()
+
   useEffect(() => {
     db.collection('video').onSnapshot(snapshot =>
       setVideos(snapshot.docs.map(doc => doc.data()))

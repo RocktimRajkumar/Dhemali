@@ -11,7 +11,7 @@ export default function VideoFooter({ channel, description, song }) {
                 <p>{description}</p>
                 <div className="videoFooter_ticker">
                     <MusicNoteIcon className="videoFooter_icon" />
-                    <Ticker mode="smooth">
+                    <Ticker mode="await">
                         {({ index }) => (
                             <>
                                 <p>{song}</p>
